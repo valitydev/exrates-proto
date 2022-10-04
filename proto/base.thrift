@@ -2,14 +2,14 @@ namespace java dev.vality.exrates.base
 namespace erlang exrates.base
 
 /**
- * Отметка во времени согласно RFC 3339.
+ * Timestamp according to RFC 3339.
  *
- * Строка должна содержать дату и время в UTC в следующем формате:
+ * The string must contain date and time in UTC in the following format:
  * `2016-03-22T06:12:27Z`.
  */
 typedef string Timestamp
 
-/** Рациональное число. */
+/** Rational number. */
 struct Rational {
     1: required i64 p
     2: required i64 q
