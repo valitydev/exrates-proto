@@ -1,0 +1,8 @@
+{application, exrates_proto, [
+    {description, "Thrift proto for currency exchange rates"},
+    {vsn, "0.1.0"},
+    {applications, [
+        kernel,
+        stdlib
+    ]}
+]}.
