@@ -9,7 +9,7 @@ typedef string EventID
 
 struct Currency {
     1: required CurrencySymbolicCode symbolic_code
-    2: required i8 exponent
+    2: required i16 exponent
 }
 
 union CurrencyEventPayload {
