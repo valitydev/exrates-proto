@@ -14,3 +14,8 @@ struct Rational {
     1: required i64 p
     2: required i64 q
 }
+
+struct CurrencyData {
+    1: required Currency source_currency
+    2: required Currency destination_currency
+}
