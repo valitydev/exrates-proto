@@ -1,6 +1,8 @@
 namespace java dev.vality.exrates.base
 namespace erlang exrates.base
 
+/** ISO 4217 */
+typedef string CurrencySymbolicCode
 /**
  * Timestamp according to RFC 3339.
  *
@@ -15,7 +17,7 @@ struct Rational {
     2: required i64 q
 }
 
-struct CurrencyData {
-    1: required Currency source_currency
-    2: required Currency destination_currency
+struct Currency {
+    1: required CurrencySymbolicCode symbolic_code
+    2: required i16 exponent
 }
