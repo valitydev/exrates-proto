@@ -21,6 +21,6 @@ struct GetCurrencyExchangeRateRequest {
 
 service ExchangeRateService {
 
-    CurrencyExchangeRateResult GetExchangeRateData (1: GetCurrencyExchangeRateRequest request)
+    GetCurrencyExchangeRateResult GetExchangeRateData (1: GetCurrencyExchangeRateRequest request)
 
 }
