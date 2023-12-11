@@ -19,8 +19,11 @@ struct GetCurrencyExchangeRateRequest {
     1: required CurrencyData currency_data
 }
 
+exception ExRateNotFound {}
+
 service ExchangeRateService {
 
     GetCurrencyExchangeRateResult GetExchangeRateData (1: GetCurrencyExchangeRateRequest request)
+     throws (1: ExRateNotFound ex1)
 
 }
