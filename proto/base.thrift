@@ -21,3 +21,6 @@ struct Currency {
     1: required CurrencySymbolicCode symbolic_code
     2: required i16 exponent
 }
+
+/** Сумма в минимальных денежных единицах. */
+typedef i64 Amount
