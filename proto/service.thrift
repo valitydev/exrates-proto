@@ -3,6 +3,7 @@ namespace erlang exrates.service
 
 include "base.thrift"
 
+/** Идентификатор, указывающий на источник получения курсов валют */
 typedef string SourceID
 
 struct CurrencyData {
