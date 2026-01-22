@@ -17,8 +17,14 @@ struct GetCurrencyExchangeRateResult {
     3: required base.Timestamp timestamp
 }
 
+/**
+* Запрос курса валют, где:
+* currency_data - информация о валютах, для которых запрашивается курс
+* datetime - дата и время, за которое запрашивается курс. Если не указан, будет возвращено последнее сохраненное значение
+**/
 struct GetCurrencyExchangeRateRequest {
     1: required CurrencyData currency_data
+    2: optional base.Timestamp datetime
 }
 
 /**
